@@ -1,5 +1,23 @@
+html {
+    font-family: "Tektur", sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 1rem;
+}
+
 body {
     display: block;
     align-items: center;
     text-align: center;
 }
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: auto;
+}
+
