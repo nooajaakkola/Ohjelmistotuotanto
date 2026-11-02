@@ -2,13 +2,16 @@
     --primary: black;
     --accent: slategrey;
     --text: white;
+    --decoration: #3d77ad;
 }
 
 html {
     font-family: "Tektur", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
+    padding: 0 10vw;
     display: block;
     align-items: center;
     text-align: center;
@@ -17,22 +20,51 @@ body {
     color: var(--text)
 }
 
+h1 span, h2 span, h3 span, h4 span, h5 span, p span {
+    color: var(--decoration);
+}
+
 h1 {
     font-size: 5rem;
     margin: 1rem;
 }
 
+a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company-name {
+    background: linear-gradient(90deg, var(--decoration), white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     position: fixed;
     left: 0;
 
-    border-top: 1px solid var(--accent);
+
     border-bottom: 1px solid var(--accent);
 
     height: 5rem;
     width: 100%;
+    padding: 0 15vw;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav a:hover {
+    color: var(--decoration);
 }
 
 section {
@@ -42,4 +74,3 @@ section {
     height: 90vh;
     width: auto;
 }
-
