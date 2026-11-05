@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hybrid CTRL</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,15 +11,114 @@
     </head>
     <body>
         <header>
-            
+            <a class="logo" href="#home">Hybrid CTRL</a>
+            <nav>
+                <a href="#info">Product</a>
+                <a href="#specs">Specs</a>
+                <a href="#order" class="nav-cta">Order</a>
+            </nav>
         </header>
+
         <main>
-            <section> <!--Title and frontpage section-->
-                <div> 
+            <section id="home"> <!--Title and frontpage section-->
+                <div class="hero">
                     <h1>Hybrid CTRL</h1>
                     <h2>The gaming keyboard of the future</h2>
+                    <a class="button" href="#order">Pre-order now</a>
+                    <div class="img-frame hero-img">
+                        <img src="images/hybridctrl.png" alt="Hybrid CTRL keyboard">
+                    </div>
+                </div>
+            </section>
+
+            <section id="info"> <!--Product info section-->
+                <div class="content">
+                    <p class="eyebrow">01 / Product</p>
+                    <h2>Built for the way you play</h2>
+                    <p class="lead">Newest and the most technologically advanced gaming accessory on the market.</p>
+
+                    <div class="cards">
+                        <article class="card">
+                            <div class="img-frame">
+                                <img src="images/hybridctrl.png" alt="Feature 1">
+                            </div>
+                            <h3>Seamless transition</h3>
+                            <p>The Hybrid K1 transforms almost instantaneously into a perfectly funtioning gaming controller.</p>
+                        </article>
+                        <article class="card">
+                            <div class="img-frame">
+                                <img src="images/hybridctrl.png" alt="Feature 2">
+                            </div>
+                            <h3>Device support</h3>
+                            <p>The Hybrid K1 supports bluetooth 6.3 making it perfect for any PC and well as all gaming consoles, including the PS5, XBox X and even the Nintendo Switch.</p>
+                        </article>
+                        <article class="card">
+                            <div class="img-frame">
+                                <img src="images/hybridctrl.png" alt="Feature 3">
+                            </div>
+                            <h3>Magnetic switches</h3>
+                            <p>You'd think we'd cheap out on the keys of this transforming keyboard, but no. The Hybrid K1 has the best magnetic rapid trigger switches on the market. </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="specs"> <!--Specs section-->
+                <div class="content">
+                    <p class="eyebrow">02 / Specs</p>
+                    <h2>Technical specifications</h2>
+
+                    <div class="specs-layout">
+                        <div class="img-frame">
+                            <img src="images/hybridctrl.png" alt="Keyboard top view">
+                        </div>
+                        <dl class="spec-list">
+                            <div><dt>Switches</dt><dd>Magnetic</dd></div>
+                            <div><dt>Layout</dt><dd>60%</dd></div>
+                            <div><dt>Connectivity</dt><dd>Bluetooth 6.3, USB receiver</dd></div>
+                            <div><dt>Polling rate</dt><dd>8000 Hz</dd></div>
+                            <div><dt>Battery</dt><dd>2 weeks of use (without charging)</dd></div>
+                            <div><dt>Weight</dt><dd>350g</dd></div>
+                            <div><dt>Dimensions (Keyboard)</dt><dd>340mm x 160mm</dd></div>
+                            <div><dt>Dimensions (Controller)</dt><dd>170mm x 160mm</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <section id="order"> <!--Contact / order section-->
+                <div class="content">
+                    <p class="eyebrow">03 / Order</p>
+                    <h2>Get your Hybrid CTRL</h2>
+                    <p class="lead">Price: 139.90€ | Shipping: 2-3 weeks | Shipping cost: 9.90€</p>
+
+                    <div class="order-layout">
+                        <form action="#" method="post">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Questions or order details"></textarea>
+
+                            <button type="submit" class="button">Send</button>
+                        </form>
+
+                        <div class="contact-info">
+                            <h3>Contact</h3>
+                            <p>hybrid.ctrl@contact.com</p>
+                            <p>+123 456789012</p>
+                            <p>Talonpojankatu 2, 67100 Kokkola</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <footer>
+            <p>&copy; 2026 Hybrid CTRL. All rights reserved.</p>
+        </footer>
     </body>
 </html>
