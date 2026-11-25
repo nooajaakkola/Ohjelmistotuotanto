@@ -313,6 +313,111 @@ form .button {
     margin-top: 0;
 }
 
+
+
+/* ---------- FAQ ---------- */
+
+
+
+/* ---------- FAQ (paste at the end of styles.css, before or after the Mobile block) ---------- */
+ 
+nav a[aria-current="page"] {
+    color: var(--highlight);
+}
+ 
+#faq {
+    align-items: flex-start;
+}
+ 
+.faq-groups {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: left;
+}
+ 
+.faq-group {
+    margin-bottom: 3rem;
+}
+ 
+.faq-group h3 {
+    color: var(--highlight);
+    font-weight: 400;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--accent);
+}
+ 
+details {
+    border-bottom: 1px solid var(--accent);
+}
+ 
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 0;
+    cursor: pointer;
+    list-style: none;
+    transition: color 0.2s;
+}
+ 
+summary::-webkit-details-marker {
+    display: none;
+}
+ 
+summary::after {
+    content: "+";
+    color: var(--highlight);
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+ 
+details[open] summary::after {
+    content: "\2212";
+}
+ 
+summary:hover {
+    color: var(--highlight);
+}
+ 
+summary:focus-visible,
+.text-link:focus-visible {
+    outline: 2px solid var(--highlight);
+    outline-offset: 2px;
+}
+ 
+details p {
+    margin: 0 0 1.2rem;
+    color: #c8cdd2;
+}
+ 
+.text-link {
+    color: var(--highlight);
+    text-decoration: underline;
+}
+ 
+.faq-cta {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--accent);
+    background: var(--surface);
+}
+ 
+.faq-cta h3 {
+    margin: 0 0 0.5rem;
+}
+ 
+.faq-cta p {
+    margin: 0 0 1.5rem;
+    color: #c8cdd2;
+}
+ 
+
+
+
 /* ---------- Footer ---------- */
 
 footer {
